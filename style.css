@@ -1,0 +1,178 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: 0px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* background-color: #06121e; */
+  background-color: #000033;
+  /* background-image: url('./img/brooke-lark-jUPOXXRNdcA-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+header {
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  width: 8rem;
+  margin-top: 1rem;
+}
+i {
+  color: white;
+}
+.header-icons,
+i {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  transition: 0.5s;
+}
+.header-icons i:hover {
+  color: red;
+}
+.header-button {
+  border: 1px solid white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: white;
+  transition: 0.8s;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.header-button:hover {
+  border: 1px solid red;
+  background-color: red;
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+svg {
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  i{
+    margin-top: 16px;
+    font-size: 2rem;
+  }
+  .header-logo img {
+    width: 160px;
+    margin-top: 46px;
+  }
+  .header-button {
+    display: none;
+  }
+}
+
+.bg-home{
+  position: relative;
+}
+
+.hero{
+  color: white;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.hero h1{
+  text-align: center;
+  line-height: 150%;
+  max-width: 940px;
+  font-size: 3rem;
+}
+.hero p{
+  text-align: center;
+  margin: 1rem 0;
+}
+.button-contact{
+  padding: 1rem 2rem;
+  color: white;
+  background-color: red;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  cursor:pointer;
+}
+@media screen and (max-width:768px){
+  .hero{
+    min-height: 60vh;
+  }
+  h1{
+    font-size: 2rem;
+    padding: 0 1rem;
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1{
+    font-size: 1rem;
+  }
+}
+
+.about{
+  background-color: #000033;
+  overflow: hidden;
+  color: white;
+}
+.about-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem 4rem 1rem;
+
+}
+.about-content img{
+  max-width: 570px;
+}
+.about-content div{
+  flex:1;
+}
+.about-description h2{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align:left;
+}
+.about-description p{
+  margin-bottom: 1rem;
+  line-height: 150%;
+  font-size: 1rem;
+}
+
+@media screen and (max-width:768px) {
+  .about-content{
+    flex-direction: column;
+  }
+}
